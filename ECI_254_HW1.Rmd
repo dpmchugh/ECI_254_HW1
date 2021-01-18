@@ -1,5 +1,5 @@
 ---
-title: "HW_1"
+title: "ECI 254 HW_1"
 author: "Devin McHugh"
 date: "1/18/2021"
 output: html_document
@@ -9,22 +9,34 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## 1. A Short Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+My name is Devin McHugh, and I am a first-year master's student in the Geography Graduate Group and the University of California, Davis. I am a researcher in the Plant and Environmental Informatics Lab on campus, and my graduate thesis will focus on the integration of tower and satellite remote sensing techniques to better understand carbon use efficiency of forest ecosystems. After obtaining my master's degree, I am interested in pursuing applied research for remote sensing of the environment to predict drivers of climate change. I am taking this course to learn R programming, for it is essential for my optimal success in data extraction, visualization, and analyses.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## 2. My favorite music
 
-```{r cars}
-summary(cars)
+
+My favorite musical artist is *Iron & Wine*. You can find more information about their music on this [Wikipedia](https://en.wikipedia.org/wiki/Iron_%26_Wine) page.
+
+![Here is one of their album covers.](/Users/devinmchugh/Box/Winter_2021/ECI_254/hw1/ironwine.jpg)
+
+## 3. Data analyses using ggplot
+
+### 3a. Age versus death probability
+
+```{r echo=FALSE, include=FALSE}
+
+library(dslabs)
+library(tidyverse)
+
 ```
 
-## Including Plots
+``` {r}
+ggplot(death_prob) + geom_point(aes(age,prob))
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+This figure displays the probability of death in humans given a specific age. Note that this chart shows black, circular dots for both represented groups in the dataset (male and female).
+
+
+### 3b. 
